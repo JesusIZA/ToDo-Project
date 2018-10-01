@@ -1,7 +1,8 @@
 .tasks {
+	overflow: hidden;
 	border-radius: 5px 40px 5px 5px;
 	margin: 20px auto;
-	padding: 10px 0 0 0;
+	padding: 0;
 	float: none;
 }
 .task {
@@ -15,18 +16,18 @@
 }
 .task p:hover {
 	font-weight: normal;
+	color: black;
 	cursor: default;
 }
 .task p:active {
 	transform: scale(1);
+	color: black;
 }
 .task-field {
 	font-size: 35px;
-	height: 77px;
 	background: rgb(4, 100, 126);
 	margin: 0;
 	padding: 10px;
-	margin-top: 10px;
 
 	display: flex;
 	flex-direction: column;
@@ -74,4 +75,17 @@
 }
 .burger .line:last-child{
 	transform: rotate(30deg);
+}
+.task-field:first-child{
+	margin-bottom: 10px;
+	border-bottom: 3px solid rgb(4, 100, 126);
+	color: solid rgb(4, 100, 126);
+	font-size: 1.2em;
+	text-align: center;
+	color: white;
+	letter-spacing: 1px;
+}
+.task-field:last-child{
+	margin-top: 10px;
+	height: 77px;
 }
