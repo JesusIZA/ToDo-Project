@@ -59,18 +59,15 @@
 .task-field #add:active{
 	background-color: rgb(2, 170, 130);
 }
-.burger {
-	height: 34px;
-	width: 50px;
-}
 .burger .line{
 	position: absolute;
-	top: 10px;
+	top: 14px;
 }
 .burger .line:first-child, .burger .line:last-child{
 	left: 3px;
 	width: 25px;
 	transform-origin: 0;
+	top: 14px;
 }
 .burger .line:first-child{
 	transform: rotate(-30deg);
