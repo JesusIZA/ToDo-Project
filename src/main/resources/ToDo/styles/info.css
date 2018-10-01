@@ -1,0 +1,16 @@
+#info {
+	position: relative;
+}
+#info, #info .tile {
+	font-size: 30px;
+}
+
+#info .tile .line {
+	font-size: .5em;
+	margin: 3px;
+	padding: 2px;
+}
+#info a {
+	
+	font-style: italic;
+}

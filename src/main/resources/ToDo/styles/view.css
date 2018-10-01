@@ -1,0 +1,80 @@
+.tasks {
+	border-radius: 5px 40px 5px 5px;
+	margin: 20px auto;
+	padding: 10px 0 0 0;
+	float: none;
+}
+.task {
+	border-radius: 0 7px 7px 7px;
+	background: rgb(4, 156, 107);
+	margin-right: 17px;
+	margin-left: 17px;
+}
+.task:hover{
+	background: rgb(4, 226, 167);
+}
+.task p:hover {
+	font-weight: normal;
+	cursor: default;
+}
+.task p:active {
+	transform: scale(1);
+}
+.task-field {
+	font-size: 35px;
+	height: 77px;
+	background: rgb(4, 100, 126);
+	margin: 0;
+	padding: 10px;
+	margin-top: 10px;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+}
+.task-field div, .task-field textarea {
+	font-size: .7em;
+	border: 0;
+	height: 77px;
+}
+.task-field textarea {
+	resize: none;
+	width: 80%;
+	border-radius: 0 0 0 10px;
+}
+.task-field #add{
+	width: 80px;
+	background-color: rgb(4, 226, 167);
+	background-image: url(../images/newTask.png);
+	background-repeat: no-repeat;
+	background-size: 45px;
+	background-position: 17px 15px;
+	border-radius: 0 10px 10px 0;
+}
+.task-field #add:hover{
+ 	cursor: pointer;
+	background-color: rgb(4, 200, 150);
+}
+.task-field #add:active{
+	background-color: rgb(2, 170, 130);
+}
+.burger {
+	height: 34px;
+	width: 50px;
+}
+.burger .line{
+	position: absolute;
+	top: 10px;
+}
+.burger .line:first-child, .burger .line:last-child{
+	left: 3px;
+	width: 25px;
+	transform-origin: 0;
+}
+.burger .line:first-child{
+	transform: rotate(-30deg);
+}
+.burger .line:last-child{
+	transform: rotate(30deg);
+}

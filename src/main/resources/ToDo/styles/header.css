@@ -1,0 +1,17 @@
+header {
+	font-size: 100px;
+	background: rgb(4, 226, 167);
+	background: -webkit-linear-gradient(right, rgb(4, 226, 167), rgb(4, 100, 126) 60%);
+	width: 100%;
+}
+header img {
+	height: 100px;
+}
+header span {
+	font-size: .8em;
+	line-height: 100px;
+	height: 100px;
+	padding: 0;
+	vertical-align: top;
+	color: white;
+}

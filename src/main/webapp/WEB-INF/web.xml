@@ -1,0 +1,58 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+<!--SERVLETS-->
+    <servlet>
+        <servlet-name>ServletDispatcher</servlet-name>
+        <servlet-class>mysite.jr.servlets.MainServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletDispatcher</servlet-name>
+        <url-pattern>/do</url-pattern>
+    </servlet-mapping>
+
+<!--FILTERS-->
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>mysite.jr.filters.EncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>LanguageFilter</filter-name>
+        <filter-class>mysite.jr.filters.LanguageFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LanguageFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>SecurityFilter</filter-name>
+        <filter-class>mysite.jr.filters.SecurityFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SecurityFilter</filter-name>
+        <servlet-name>ServletDispatcher</servlet-name>
+    </filter-mapping>
+
+<!--LISTENERS-->
+    <listener>
+        <listener-class>mysite.jr.listeners.SessionListener</listener-class>
+    </listener>
+
+    <session-config>
+        <session-timeout>10</session-timeout>
+    </session-config>
+
+</web-app>

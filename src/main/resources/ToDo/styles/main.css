@@ -1,0 +1,59 @@
+* {
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: Sansation, Arial;
+}
+
+a{
+	color: black;
+}
+a:hover {
+	color: rgb(4, 100, 126);
+}
+a:active {
+	color: rgb(4, 226, 167);
+}
+
+.tile {
+	display: inline-block;
+	margin: 7px;
+	padding: 3px;
+}
+.line {
+	display: block;
+	margin: 10px auto;
+	padding: 5px 7px;
+}
+.wrap {
+	position: relative;
+}
+.wraped {
+	position: absolute;
+}
+
+@font-face {
+	font-family: Sansation;
+	src: url(fonts/Sansation-Light.ttf);
+	font-weight: normal;
+}
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+body::-moz-scrollbar { 
+    display: none; 
+}
+body::-ms-scrollbar { 
+    display: none; 
+}
+body::-o-scrollbar { 
+    display: none; 
+}
+body::scrollbar { 
+    display: none; 
+}
+*:focus {
+    outline: none;
+}

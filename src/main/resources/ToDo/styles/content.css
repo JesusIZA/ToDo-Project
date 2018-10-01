@@ -1,0 +1,155 @@
+.wraped {
+	border-radius: 5px 40px 0 0;
+	padding: 10px;
+	margin-top: -30px;
+}
+.wraped:first-child{
+	right: 230px;
+	left: 30px;
+	top: 100px;
+	min-height: 500px;
+	border-radius: 5px 5px 5px 40px;
+	border: 3px solid rgb(4, 100, 126);
+	margin-bottom: 20px;
+}
+.wraped:last-child{
+	right: 30px;
+	background: rgb(4, 226, 167);
+	background: linear-gradient(rgb(4, 226, 167), rgb(4, 100, 126) 90%);
+}
+#content , #content .wrap {
+	font-size: 50px;
+}
+.cont {
+	font-size: .5em;
+}
+
+.tasks {
+	float: right;
+	font-size: 35px;
+	border-radius: 5px 5px 5px 40px;
+	border: 3px solid rgb(4, 100, 126);
+	margin:  0 30px;
+	margin-bottom: 20px;
+	padding: 10px;
+	max-width: 800px;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+.task {
+	font-size: 35px;
+	background: rgb(4, 100, 126);
+	margin: 7px;
+	padding: 0;
+	border-radius: 3px 20px 3px 3px;
+	min-width: 100px;
+	transition: all .3s;
+}
+.task:hover {
+	background: rgb(4, 130, 146);
+}
+.task p {
+	vertical-align: top;
+	font-size: .9em;
+	margin: 0;
+	padding-top: 0;
+}
+.task span {
+	float: right;
+	padding: 4px;
+	margin: 0;
+}
+.task span span{
+	border-radius: 3px;
+	height: 28px;
+	width: 28px;
+	margin: 0;
+	transition: all .3s;
+}
+.task .edit{
+	background: url(../images/edit.png) no-repeat;
+	background-size: 26px;
+	background-position: 5px 5px;
+}
+.task .delete{
+	background: url(../images/delete.png) no-repeat;
+	background-size: 26px;
+	background-position: 5px 5px;
+}
+.task span span:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+.task span span:active {
+	transform: scale(1);
+}
+.task .edit:hover{
+	background: url(../images/edit1.png) no-repeat;
+	background-size: 26px;
+	background-position: 5px 5px;
+}
+.task .edit:active{
+	background: url(../images/edit2.png) no-repeat;
+	background-size: 26px;
+	background-position: 5px 5px;
+}
+.task .delete:hover{
+	background: url(../images/delete1.png) no-repeat;
+	background-size: 26px;
+	background-position: 5px 5px;
+}
+.task .delete:active{
+	background: url(../images/delete2.png) no-repeat;
+	background-size: 26px;
+	background-position: 5px 5px;
+}
+.gotodo:hover {
+	cursor: pointer;
+	font-weight: bold;
+}
+.gotodo:active{
+	cursor: pointer;
+	font-weight: bold;
+	transform: scale(.99);
+}
+.new {
+	transition: width .4s;
+	height: 60px;
+	width: 10px;
+	overflow: hidden;
+	background-color: rgb(4, 226, 167);
+	background-image: url(../images/newTask.png);
+	background-repeat: no-repeat;
+	background-size: 45px;
+	background-position: 25px 7px;
+}
+.new p {
+	margin-top: 10px;
+	margin-left: 100px;
+	width: 300px;
+	overflow: hidden;
+	color: white;
+}
+.new:hover {
+	background-color: rgb(4, 200, 150);
+	cursor: pointer;
+	width: 90%;
+	background-image: url(../images/newTask.png);
+	background-repeat: no-repeat;
+	background-size: 45px;
+	background-position: 25px 7px;
+
+}
+.new:active {
+	background-color: rgb(2, 170, 130);
+	cursor: pointer;
+	transform: scale(.99);
+	background-image: url(../images/newTask.png);
+	background-repeat: no-repeat;
+	background-size: 45px;
+	background-position: 25px 7px;
+
+}

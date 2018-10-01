@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sign in</title>
+	<link rel="shortcut icon" href="images/icon.png">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/header.css">
+	<link rel="stylesheet" type="text/css" href="styles/form.css">
+	<link rel="stylesheet" type="text/css" href="styles/content.css">
+	<link rel="stylesheet" type="text/css" href="styles/info.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/validator.js"></script>
+</head>
+<body>
+	<header>
+		<span class="tile"><img src="images/icon.png"></span>
+		<span class="tile">ToDo</span>
+	</header>
+	<div id="info">
+		<span class="tile">
+			<span class="line">Kyev UA</span>
+			<span class="line">2019</span>
+		</span>
+		<span class="tile">
+			<span class="line">NeverSayDie.JR@gmail.com</span>
+			<a class="line" href="#">NeverSayDie</a>
+		</span>
+	</div>
+	<div id="content">
+		<div class="wrap">
+			<span class="tile wraped cont">Text</span>
+			<span class="tile wraped">
+				<form method="get" action="tasks.html" onsubmit="return validLogin(login.value, password.value)" autocomplete>
+					<input class="line" type="text" id="login" name="login" required placeholder="login">
+					<input class="line" type="password" id="password" name="password" required placeholder="password">
+					<div class="line">
+						<input class="tile butt" type="submit" value="Sign in">
+						<input class="tile butt" type="button" value="Sign up">
+					</div>
+				</form>
+			</span>
+		</div>
+		
+	</div>
+</body>
+</html>
